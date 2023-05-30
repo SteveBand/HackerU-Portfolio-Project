@@ -1,0 +1,135 @@
+@import url("https://fonts.googleapis.com/css2?family=Assistant&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  box-sizing: border-box;
+  background-image: url(../blue-forward-utils/Path\ 15.png);
+  background-size: 100% 70%;
+  background-repeat: no-repeat;
+  color: white;
+  font-family: "Assistant", sans-serif;
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70vh;
+  flex-direction: column;
+}
+
+h1 {
+  font-size: 86px;
+  color: #d3e10e;
+  text-align: center;
+}
+
+p {
+  text-align: center;
+  font-size: 20px;
+}
+
+.data {
+  width: 100%;
+  height: 30vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.data > form {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  direction: rtl;
+  color: black;
+  gap: 40px;
+}
+
+.input-form {
+  width: 30%;
+}
+
+form div label {
+  display: block;
+  color: #011560;
+}
+
+form div input {
+  width: 100%;
+  height: 40px;
+  border: none;
+  outline: none;
+  border-bottom: 3px solid #d3e10e;
+  background-color: #f6f6f6;
+}
+
+form button {
+  padding: 10px 40px;
+  font-size: 18px;
+  background-color: #d3e10e;
+  color: #011560;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 500ms ease;
+  letter-spacing: 1px;
+}
+
+form button:hover {
+  scale: 1.1;
+}
+
+@media screen and (max-width: 1050px) {
+  h1 {
+    font-size: 50px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    background-size: 100% 50%;
+  }
+  .title {
+    height: 50vh;
+  }
+
+  .data {
+    height: 50%;
+  }
+
+  .data > form {
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .data form div {
+    width: 50%;
+  }
+
+  .data button {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  h1 {
+    font-size: 30px;
+    max-width: 80%;
+  }
+
+  p {
+    width: 80%;
+  }
+
+  .data form div {
+    width: 70%;
+  }
+}

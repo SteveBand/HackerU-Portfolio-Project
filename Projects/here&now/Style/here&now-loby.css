@@ -1,0 +1,197 @@
+@import url("https://fonts.googleapis.com/css2?family=Satisfy&family=Varela+Round&display=swap");
+
+:root {
+  --text-color: white;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background: transparent linear-gradient(180deg, #281eff 0%, #2dff8c 100%) 0%
+    0% no-repeat padding-box;
+  box-sizing: border-box;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+
+section h6,
+section p {
+  font-family: "Varela Round", sans-serif;
+  width: 70%;
+}
+
+section > h1 {
+  color: var(--text-color);
+  font-size: 160px;
+  font-weight: 200;
+  text-shadow: 0 0 36px #00000087;
+  font-family: "Satisfy", cursive;
+  margin-bottom: 0;
+}
+
+section > h6 {
+  font-size: 32px;
+  color: var(--text-color);
+  font-weight: 100;
+}
+
+section > p {
+  font-size: 16px;
+  color: var(--text-color);
+  font-weight: 100;
+  margin-top: 20px;
+}
+
+section > form {
+  margin-top: 30px;
+  direction: rtl;
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 0;
+}
+
+section > form div {
+  width: 40%;
+  height: auto;
+  margin: 0 20px;
+}
+
+section > form div input {
+  background-color: transparent;
+  outline: none;
+  border: 2px solid white;
+  width: 100%;
+  height: 50px;
+  font-size: 18px;
+  color: white;
+}
+
+section > form label {
+  text-align: right;
+  display: block;
+  color: var(--text-color);
+  margin-bottom: 5px;
+  font-size: 18px;
+}
+
+section > form button {
+  position: relative;
+  top: 10px;
+  border: none;
+  outline: none;
+  font-size: 22px;
+  width: 150px;
+  padding: 15px 0;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 400ms ease-in-out;
+}
+
+section > form button:hover {
+  scale: 1.05;
+}
+
+@media screen and (max-width: 1200px) {
+  section > form div input {
+    width: 100%;
+    height: 35px;
+  }
+
+  section > form button {
+    font-size: 18px;
+    padding: 10px 0;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  section > h1 {
+    font-size: 100px;
+  }
+
+  section > h6 {
+    font-size: 25px;
+  }
+
+  section > form {
+    width: 80%;
+  }
+
+  section > form button {
+    width: 120px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  section > p {
+    width: 90%;
+  }
+
+  section > form {
+    width: 95%;
+  }
+}
+
+@media screen and (max-width: 485px) {
+  section {
+    width: 100%;
+  }
+
+  section > h1 {
+    font-size: 80px;
+  }
+
+  section > h6 {
+    font-size: 22px;
+    width: 80%;
+  }
+
+  section > p {
+    width: 95%;
+  }
+
+  section > form {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  section > form div {
+    margin: 20px 0;
+    width: 80%;
+  }
+
+  section > form button {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  section > h1 {
+    font-size: 60px;
+  }
+
+  section > h6 {
+    font-size: 20px;
+  }
+
+  section > p {
+    font-size: 15px;
+    width: 100%;
+  }
+}

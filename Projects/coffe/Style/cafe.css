@@ -1,0 +1,14 @@
+@import url("https://fonts.googleapis.com/css2?family=Heebo:wght@500&display=swap");
+* {
+  font-family: "Heebo", sans-serif;
+}
+
+input {
+  background-color: #e5eeff;
+  border: none;
+  border-bottom: 3px solid #020253;
+}
+
+p {
+  color: #020253;
+}/*# sourceMappingURL=cafe.css.map */

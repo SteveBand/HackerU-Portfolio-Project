@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8" />
+    <title>Steves Portfolio</title>
+    <link rel="stylesheet" href="/index-style/index.css" />
+    <script src="index.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script
+      src="https://kit.fontawesome.com/74c066d068.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <nav id="nav" class="nav">
+      <section>
+        <article>
+          <img src="/index-utils/profile-pic.JPG" class="profile-img" />
+          <p>Steve Bandarker</p>
+        </article>
+
+        <ul>
+          <a class="home-section active" href="#home-section"><li>Home</li></a>
+          <a class="about-me-section" href="#about-me-section"
+            ><li>About</li></a
+          >
+          <a class="gallery-section" href="#gallery-section"
+            ><li>Gallery</li></a
+          >
+          <a class="contact-section" href="#contact-section"
+            ><li>Contact</li></a
+          >
+        </ul>
+
+        <div class="burger-icon" onclick="showMenu()">
+          <svg
+            focusable="false"
+            aria-hidden="true"
+            viewBox="0 0 24 24"
+            data-testid="MenuIcon"
+            width="50px"
+            height="50px"
+          >
+            <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"></path>
+          </svg>
+        </div>
+      </section>
+      <article class="pop-article">
+        <ul class="pop-nav" id="pop-nav">
+          <a href="#home-section"><li>Home</li></a>
+          <a href="#about-me-section"><li>About</li></a>
+          <a href="#gallery-section"><li>Gallery</li></a>
+          <a href="#contact-section"><li>Contact</li></a>
+        </ul>
+      </article>
+    </nav>
+    <section class="title" id="home-section">
+      <h1>Personal Portfolio</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat cumque
+        aspernatur saepe fuga nam dolore rerum, laudantium molestias praesentium
+        nesciunt soluta consequatur repudiandae odit quidem distinctio, aliquam,
+        quisquam eveniet! Aspernatur!
+      </p>
+    </section>
+    <section class="tech-icons">
+      <img
+        src="/index-utils/Tech-icons/2560px-Sass_Logo_Color.svg.png"
+        alt="Sass"
+      />
+      <img
+        src="/index-utils/Tech-icons/Bootstrap_logo.svg.png"
+        alt="Bootstrap"
+      />
+      <img
+        src="/index-utils/Tech-icons/HTML5_logo_and_wordmark.svg.png"
+        alt="HTML5"
+      />
+      <img
+        src="/index-utils/Tech-icons/1452px-CSS3_logo_and_wordmark.svg.png"
+        alt="CSS3"
+      />
+    </section>
+    <section class="about-me" id="about-me-section">
+      <img src="/index-utils/profile-pic.JPG" />
+      <h1>About me</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis nostrum
+        incidunt sit assumenda id aliquid ullam optio quos? Nemo facilis nam
+        officia totam magnam. Error, corporis facere provident consequatur totam
+        voluptatum earum reprehenderit, consectetur architecto perspiciatis
+        nesciunt. Voluptatibus dolorum asperiores, fugiat quo rem aspernatur.
+        Illum quisquam accusantium recusandae necessitatibus eveniet hic,
+        consectetur architecto placeat optio reiciendis, voluptatum ab
+        doloremque maiores! Error, ex nemo unde quas reprehenderit eos nulla
+        debitis culpa autem incidunt ducimus expedita sed doloribus ut
+        exercitationem accusantium. Quo quisquam, et voluptatum eligendi ullam
+        libero animi voluptatibus itaque iure!
+      </p>
+
+      <a href="/Steve's Resume.pdf" download><button>Download CV</button></a>
+    </section>
+
+    <section class="gallery" id="gallery-section">
+      <h1>My Works</h1>
+      <article>
+        <a
+          class="container"
+          href="/landing-pages/here&now-land-page/here&now-landing-page.html"
+        >
+          <img
+            src="https://projects-place.com/wp-content/uploads/2023/03/Home-1024x576.png"
+          />
+          <h3>Project Name</h3>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis
+            laboriosam voluptatum enim tempora temporibus voluptates ut cum
+            alias nam asperiores.
+          </p>
+          <button>Download Project</button>
+        </a>
+        <a
+          class="container"
+          href="/landing-pages/coffe-land-page/coffe-land-page.html"
+        >
+          <img
+            src="https://projects-place.com/wp-content/uploads/2023/03/Landing-Page-Option-–-13-1024x577.png"
+          />
+          <h3>Project Name</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis
+            maxime accusantium, consequatur tempora optio odit obcaecati
+            perferendis sint provident amet culpa maiores ullam consectetur cum
+            eaque quas rem numquam ipsa.
+          </p>
+          <button>Download Project</button>
+        </a>
+        <a
+          class="container"
+          href="/landing-pages/travel-land-page/travel-land-page.html"
+        >
+          <img
+            src="/Projects/travel/travel-utils/Screen Shot 2023-05-30 at 17.39.58.png"
+          />
+          <h3>Project Name</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat,
+            eligendi minus aperiam illum a ipsam officia doloremque alias ab
+            enim molestias expedita neque natus veritatis?
+          </p>
+          <button>Download Project</button>
+        </a>
+        <a
+          class="container"
+          href="/landing-pages/forward2-land-page/forwards2-landing-page.html"
+        >
+          <img
+            src="https://projects-place.com/wp-content/uploads/2023/03/Landing-Page-Option-–-15-1024x577.png"
+          />
+          <h3>Project Name</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni
+            expedita id odit quasi in dignissimos tempore, atque veritatis
+            laborum eaque. Earum eligendi animi voluptatibus.
+          </p>
+          <button>Download Project</button>
+        </a>
+        <a
+          href="/landing-pages/forward-land-page/foward-landing-page.html"
+          class="container"
+        >
+          <img
+            src="https://projects-place.com/wp-content/uploads/2023/03/Landing-Page-Option-–-5-1024x577.png"
+            alt=""
+          />
+          <h3>Project Name</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores
+            voluptatibus enim sapiente, esse deleniti sunt necessitatibus
+            praesentium minima qui veritatis laborum facilis numquam amet!
+            Possimus error aliquid nesciunt porro ab. Accusantium, repudiandae?
+          </p>
+          <button>Download Project</button>
+        </a>
+        <a class="container">
+          <img
+            src="https://projects-place.com/wp-content/uploads/2023/03/Landing-Page-Option-–-1-1024x577.png"
+            alt=""
+          />
+          <h3>Project Name</h3>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet,
+            laboriosam. Nisi maxime praesentium at tempore nemo ipsa unde
+            itaque, quibusdam excepturi, nostrum dolores aliquid, consequatur
+            sapiente labore?
+          </p>
+          <button>Download Project</button>
+        </a>
+      </article>
+    </section>
+    <section class="contact" id="contact-section">
+      <img
+        src="https:projects-place.com/wp-content/uploads/2023/04/Rectangle-41.png"
+      />
+      <article>
+        <h2>צרו קשר</h2>
+        <p>
+          לורם איפסום דולור סיט אמט, קונסקטורלית סחטיר בלובק. תצטנפל בלינדו
+          למרקל אס לכימפו, דול, צוט ומעיוט - לפגו רוגצה.
+        </p>
+        <form>
+          <label for="name">שם</label>
+          <input id="name" name="name" type="text" />
+
+          <label for="email">אימייל</label>
+          <input id="email" name="email" type="text" />
+
+          <label for="phone">טלפון</label>
+          <input id="phone" name="phone" type="text" />
+
+          <label for="message">הודעה</label>
+          <textarea placeholder="הודעה"></textarea>
+        </form>
+      </article>
+    </section>
+    <section class="media">
+      <ul>
+        <li>
+          <i class="icon fa-solid fa-location-dot"></i>
+          <span>Ashdod, Harav Kalisher</span>
+        </li>
+        <li>
+          <i class="icon fa-regular fa-message"></i>
+          <span>steve020629@icloud.com</span>
+        </li>
+        <li>
+          <i class="icon fa-brands fa-whatsapp"></i>
+          <span>0546206260</span>
+        </li>
+        <li>
+          <i class="icon fa-solid fa-phone"></i>
+          <span>0546206260</span>
+        </li>
+        <li>
+          <i class="icon fa-brands fa-linkedin-in"></i>
+          <span>https://rb.gy/2025f</span>
+        </li>
+        <li>
+          <i class="icon fa-brands fa-facebook-f"></i>
+          <span>#facebook</span>
+        </li>
+      </ul>
+    </section>
+    <footer>
+      <p>Steve Bandarker</p>
+      <p>כל הזכויות שמורות</p>
+    </footer>
+  </body>
+</html>
