@@ -1,0 +1,140 @@
+@import url("https://fonts.googleapis.com/css2?family=Caprasimo&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  background-image: url("https://mobidictum.com/wp-content/uploads/2021/12/Play-to-earn-para-kazandiran-oyunlar.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+
+div.win-container {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.7);
+  justify-content: center;
+  align-items: center;
+  display: none;
+}
+
+div.win-container > h1 {
+  color: beige;
+  font-size: 35px;
+  font-family: "Caprasimo", cursive;
+  letter-spacing: 5px;
+  font-weight: 100;
+}
+
+section {
+  width: 40%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+section article.wrapper {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  direction: rtl;
+  text-align: center;
+}
+
+section article.wrapper > h1 {
+  color: #fdbd03;
+  font-size: 40px;
+}
+
+section article.wrapper > p {
+  color: white;
+  font-size: 18px;
+  width: 90%;
+}
+
+.board {
+  display: inline-grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-top: 30px;
+}
+
+.board div {
+  border: 1px solid #fdbd03;
+  height: 120px;
+  width: 120px;
+  cursor: pointer;
+  background-color: white;
+  font-size: 85px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: gray;
+}
+
+.board div:hover {
+  filter: brightness(95%);
+}
+
+@media screen and (max-width: 930px) {
+  .board div {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+@media screen and (max-width: 780px) {
+  .board div {
+    width: 80px;
+    height: 80px;
+  }
+}
+
+@media screen and (max-width: 780px) {
+  .board div {
+    width: 80px;
+    height: 80px;
+  }
+}
+
+@media screen and (max-width: 630px) {
+  section {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+
+  .board div {
+    width: 80px;
+    height: 80px;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  section {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+
+  section > article {
+    background-color: transparent;
+    margin: 0 auto;
+  }
+
+  .board div {
+    width: 80px;
+    height: 80px;
+  }
+}

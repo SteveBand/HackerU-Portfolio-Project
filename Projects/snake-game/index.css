@@ -1,0 +1,186 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  direction: rtl;
+  background-image: url("https://wallpaperaccess.com/full/8552475.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-align: center;
+}
+
+.menu-wrapper {
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.35);
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu-wrapper > .menu {
+  width: 700px;
+  height: 500px;
+  background-image: url("https://wallpapers.com/images/hd/clear-snake-game-character-z6jd7jtsl04g6mxx.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+}
+
+.menu-wrapper > .menu > .play-btn {
+  text-align: center;
+  padding: 10px 30px;
+  border: none;
+  outline: none;
+  z-index: 10;
+  margin: auto;
+  font-size: 20px;
+  color: white;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  cursor: pointer;
+  transition: 200ms ease-in-out;
+  border-top: 1px solid gray;
+  border-bottom: 1px solid gray;
+}
+
+.menu-wrapper > .menu > .play-btn:hover {
+  letter-spacing: 20px;
+}
+
+.board {
+  width: 100%;
+  display: inline-grid;
+  place-items: center;
+  grid-template-columns: repeat(30, 27px);
+  grid-template-rows: repeat(30, 27px);
+  border: 1px solid black;
+}
+
+.board > div {
+  width: 27px;
+  color: transparent;
+  height: 27px;
+}
+
+.left-head {
+  border-top-left-radius: 50%;
+  border-bottom-left-radius: 50%;
+  border-left: 50%;
+  background-color: black;
+}
+
+.right-head {
+  border-top-right-radius: 50%;
+  border-bottom-right-radius: 50%;
+  border-right: 50%;
+}
+
+.bottom-head {
+  border-bottom-right-radius: 50%;
+  border-bottom-left-radius: 50%;
+}
+
+.upper-head {
+  border-top-right-radius: 50%;
+  border-top-left-radius: 50%;
+}
+
+.apple {
+  background-image: url("https://icons.iconarchive.com/icons/google/noto-emoji-food-drink/256/32349-red-apple-icon.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.topLeftRadius {
+  border-radius: 12px 0 0 0;
+}
+
+.topRightRadius {
+  border-radius: 0 12px 0 0;
+}
+
+.bottomRightRadius {
+  border-radius: 0 0 12px 0;
+}
+
+.bottomLeftRadius {
+  border-radius: 0 0 0 12px;
+}
+
+@media screen and (max-width: 1600px) {
+  .board {
+    grid-template-columns: repeat(30, 20px);
+    grid-template-rows: repeat(30, 20px);
+  }
+
+  .board > div {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+@media screen and (max-width: 620px) {
+  .board {
+    grid-template-columns: repeat(30, 15px);
+    grid-template-rows: repeat(30, 15px);
+  }
+
+  .board > div {
+    width: 15px;
+    height: 15px;
+  }
+
+  .menu-wrapper > .menu {
+    width: 500px;
+    height: 300px;
+  }
+}
+
+@media screen and (max-width: 460px) {
+  .board {
+    grid-template-columns: repeat(30, 12px);
+    grid-template-rows: repeat(30, 12px);
+  }
+
+  .board > div {
+    width: 12px;
+    height: 12px;
+  }
+
+  .menu-wrapper > .menu {
+    width: 350px;
+    height: 200px;
+  }
+}
+
+@media screen and (max-width: 370px) {
+  .board {
+    grid-template-columns: repeat(30, 9px);
+    grid-template-rows: repeat(30, 9px);
+  }
+
+  .board > div {
+    width: 9px;
+    height: 9px;
+  }
+}

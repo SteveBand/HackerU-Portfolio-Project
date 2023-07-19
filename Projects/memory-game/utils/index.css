@@ -1,0 +1,350 @@
+@import url("https://fonts.googleapis.com/css2?family=Kablammo&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  height: 100vh;
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-image: url("https://t3.ftcdn.net/jpg/05/39/24/80/360_F_539248066_58s2O6aOYYVHy2brsOdAWHhONWSecwDs.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+section.before-start {
+  border: 1px solid black;
+  letter-spacing: 4px;
+  text-align: center;
+  padding: 50px;
+  color: #ffe4c4;
+}
+section.before-start > h1 {
+  font-size: 40px;
+}
+
+section.before-start > button {
+  margin: 20px;
+  padding: 10px;
+  background-color: bisque;
+  outline: none;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 20px;
+  letter-spacing: 2px;
+  transition: 500ms;
+}
+
+section.before-start > button:hover {
+  scale: 1.1;
+}
+
+article {
+  display: flex;
+  margin: 0 0 20px 0;
+  color: azure;
+}
+
+article h4 {
+  margin: 0 20px;
+}
+
+article button {
+  outline: none;
+  border: none;
+  padding: 10px 20px;
+  font-size: 24px;
+  cursor: pointer;
+  background-color: #ce7532;
+  border-radius: 10px;
+  margin: 0 20px;
+  transition: 500ms ease;
+}
+
+article button:hover {
+  scale: 1.1;
+}
+
+article h4 {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 20px;
+  background-image: url("https://img.freepik.com/free-vector/wooden-texture-background_1380-1.jpg");
+}
+
+article.game-on {
+  display: none;
+  justify-content: space-evenly;
+}
+
+section.game-on {
+  display: none;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  gap: 10px;
+  border: 3px solid #662f10;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+section.game-on > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 120px;
+  height: 120px;
+  color: rgb(255, 255, 255);
+  font-weight: 900;
+  font-size: 28px;
+  background-image: url("https://img.freepik.com/free-vector/wooden-texture-background-wood-material-pattern_107791-8838.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: 600ms ease;
+  transform: rotateY(180deg);
+  cursor: pointer;
+  box-shadow: 0px 0px 28px 0px rgba(0, 0, 0, 0.75) inset;
+}
+
+section.game-on > div span {
+  display: none;
+  pointer-events: none;
+}
+
+section.game-on > div.hidden {
+  display: hidden;
+  background-image: none;
+  opacity: 0;
+}
+
+section.game-on > div.showing {
+  transform: rotateY(0deg);
+}
+
+section.game-on > div.showing span {
+  display: initial;
+}
+
+section.win-wrapper {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.65);
+  z-index: 10;
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+section.win-wrapper > article {
+  width: 600px;
+  height: 400px;
+  background-image: url("https://img.freepik.com/free-vector/wooden-texture-background-wood-material-pattern_107791-8838.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 20px;
+}
+
+section.win-wrapper > article > div > button {
+  max-height: 50px;
+  background-image: url("https://img.freepik.com/free-vector/wooden-texture-background_1380-1.jpg");
+}
+
+section.win-wrapper > article > h1 {
+  margin-bottom: 50px;
+  font-size: 45px;
+  color: blanchedalmond;
+  letter-spacing: 5px;
+  font-family: "Kablammo", cursive;
+  background: transparent;
+}
+
+.leader-board-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+.leader-board {
+  direction: rtl;
+  display: none;
+  width: 80%;
+  text-align: center;
+}
+
+.leader-board > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  border-bottom: 3px solid wheat;
+}
+
+.leader-board > div > p {
+  width: 100%;
+  font-size: 20px;
+  color: wheat;
+  height: min-content;
+  margin: 10px 0;
+  max-width: 150px;
+}
+
+.leader-board > div > .number {
+  width: 50px;
+}
+
+.leader-board > button {
+  padding: 5px 0;
+  margin: 5px 0;
+  width: 30%;
+  background-color: bisque;
+  outline: none;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 20px;
+  letter-spacing: 2px;
+  transition: 500ms;
+  order: 1;
+}
+
+@media screen and (min-width: 801px) {
+  .leader-board > div {
+    justify-content: space-between;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  section.game-on > div {
+    max-width: 100px;
+    max-height: 100px;
+  }
+}
+
+@media screen and (max-width: 680px) {
+  section.game-on {
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-columns: repeat(6, 1fr);
+  }
+
+  section.game-on > div {
+    max-width: 80px;
+    max-height: 80px;
+  }
+
+  article.game-on > h4 {
+    padding: 5px 10px;
+    margin: 0 5px;
+  }
+
+  article.game-on > button {
+    font-size: 22px;
+    padding: 5px 10px;
+    margin: 0 10px;
+  }
+}
+
+@media screen and (max-width: 565px) {
+  section.game-on {
+    grid-template-rows: repeat(6, 1fr);
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  section.game-on > div {
+    max-width: 80px;
+    max-height: 80px;
+  }
+
+  section.win-wrapper > article {
+    text-align: center;
+  }
+
+  section.win-wrapper > article > h1 {
+    font-size: 30px;
+  }
+
+  section.leader-board > div > p {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  section.game-on > div {
+    max-width: 75px;
+    max-height: 75px;
+  }
+
+  section.game-on > div span {
+    font-size: 23px;
+  }
+
+  section.before-start {
+    padding: 10px;
+  }
+
+  section.before-start > h1 {
+    font-size: 22px;
+  }
+
+  section.before-start > button {
+    font-size: 16px;
+    margin: 10px;
+  }
+
+  article.game-on > h4 {
+    padding: 5px 10px;
+    margin: 0 5px;
+  }
+
+  article.game-on > button {
+    font-size: 16px;
+    padding: 5px 5px;
+    margin: 0 5px;
+  }
+
+  section.win-wrapper > article > h1 {
+    font-size: 20px;
+  }
+
+  section.win-wrapper > article > div > button {
+    margin: 10px 0;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  section.game-on > div {
+    max-width: 55px;
+    max-height: 55px;
+  }
+
+  .leader-board-wrapper > .leader-board > div {
+    width: 100%;
+  }
+
+  .leader-board-wrapper > .leader-board > div > p {
+    font-size: 16px;
+  }
+}

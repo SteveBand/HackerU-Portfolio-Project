@@ -1,0 +1,253 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  height: 100vh;
+  width: 100%;
+  background-image: url("https://previews.123rf.com/images/pdreams/pdreams1410/pdreams141000027/32604573-blue-handmade-numbers-math-background-illustration.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+}
+
+h1 {
+  font-size: 40px;
+  letter-spacing: 2px;
+}
+
+body > section {
+  position: fixed;
+  left: 35%;
+  width: 550px;
+  height: 300px;
+  padding: 100px;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  direction: rtl;
+}
+
+body > section > .title {
+  margin-bottom: 10%;
+}
+
+body > section > .title > p {
+  font-size: 18px;
+}
+
+body > section > .content {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+}
+
+body > section > .content > input {
+  border: none;
+  outline: none;
+  background-color: gainsboro;
+  padding: 5px;
+  border: 1px solid #1ee2f8;
+  margin-right: 15px;
+}
+
+body > section > .content > button {
+  padding: 7px 35px;
+  background-color: #1ee2f8;
+  outline: none;
+  border: none;
+  margin-right: 10px;
+  cursor: pointer;
+  transition: 200ms ease-in-out;
+  border-radius: 5px;
+  font-size: 20px;
+}
+
+body > section > .content > button:hover {
+  scale: 1.1;
+}
+
+.math-problem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100px;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.math-problem p {
+  margin-left: 0 10px;
+}
+
+.math-problem p:last-child {
+  margin-right: 10px;
+}
+
+.operator {
+  margin: 0 10px;
+}
+
+#snackbar {
+  visibility: hidden;
+  min-width: 250px;
+  margin-left: -125px;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  border-radius: 2px;
+  padding: 16px;
+  position: fixed;
+  z-index: 1;
+  left: 50%;
+  bottom: 30px;
+}
+
+#snackbar.show {
+  visibility: visible;
+
+  -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+  animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+@-webkit-keyframes fadein {
+  from {
+    bottom: 0;
+    opacity: 0;
+  }
+  to {
+    bottom: 30px;
+    opacity: 1;
+  }
+}
+
+@keyframes fadein {
+  from {
+    bottom: 0;
+    opacity: 0;
+  }
+  to {
+    bottom: 30px;
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeout {
+  from {
+    bottom: 30px;
+    opacity: 1;
+  }
+  to {
+    bottom: 0;
+    opacity: 0;
+  }
+}
+
+@keyframes fadeout {
+  from {
+    bottom: 30px;
+    opacity: 1;
+  }
+  to {
+    bottom: 0;
+    opacity: 0;
+  }
+}
+
+@media screen and (max-width: 1150px) {
+  body {
+    justify-content: center;
+    align-items: center;
+  }
+
+  body > section {
+    position: static;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  body {
+    justify-content: center;
+    align-items: center;
+  }
+
+  body > section {
+    position: static;
+    height: 70%;
+    display: flex;
+    text-align: center;
+    padding: 100px 0;
+    align-items: center;
+    flex-direction: column;
+    width: 85%;
+  }
+
+  section .content {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  section .title p {
+    text-align: center;
+    width: 90%;
+  }
+
+  section .math-problem {
+    display: flex;
+    font-size: 35px;
+  }
+
+  body > section > .content > input {
+    width: 90%;
+    padding: 15px 0;
+  }
+
+  body > section > .content > button {
+    padding: 15px 0;
+    width: 90%;
+  }
+}
+
+body{
+    background-color: rgb(242, 72, 72);
+}
+
+/* @media screen and (max-width: 650px) {
+  body > section {
+    position: static;
+    padding: 80px 0;
+  }
+
+  body > section > .content > button {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  h1 {
+    font-size: 30px;
+  }
+  body > section {
+    position: static;
+    padding: 80px 0;
+  }
+
+  body > section > .content > button {
+    padding: 5px 0;
+    width: 20%;
+  }
+
+  body > section > .content > input {
+    padding: 10px 0;
+    border: 1px solid #1ee2f8;
+    width: 70px;
+    margin: 0 20px;
+  }
+
+  body > section > .content {
+    justify-content: space-evenly;
+  }
+} */

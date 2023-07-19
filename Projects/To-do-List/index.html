@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/style.css" />
+    <script>
+      var exports = {};
+    </script>
+    <script src="script/script.js" defer></script>
+  </head>
+  <body>
+    <section class="container">
+      <section class="edit-wrapper">
+        <form>
+          <p></p>
+          <label for="edit-title">Title</label>
+          <input type="text" id="edit-title" />
+          <label for="edit-description">Description</label>
+          <textarea type="text" id="edit-description"></textarea>
+          <button class="save-btn">Save</button>
+        </form>
+      </section>
+      <nav class="navbar">
+        <ul>
+          <li class="active">New Tasks</li>
+          <li>Completed Tasks</li>
+          <li>Add Task</li>
+        </ul>
+      </nav>
+      <article class="new-tasks tasks"></article>
+      <article class="completed-tasks tasks"></article>
+      <article class="add-task">
+        <form>
+          <label for="title">Title</label>
+          <input type="text" id="title" />
+          <label for="description">Description</label>
+          <input type="text" id="description" />
+          <label for="Priority">Priority</label>
+          <select id="Priority">
+            <option value="0">Low</option>
+            <option value="1">Medium</option>
+            <option value="2">High</option>
+          </select>
+        </form>
+        <button class="add-task-btn">Add Task</button>
+      </article>
+    </section>
+  </body>
+</html>

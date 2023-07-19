@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="script.js" defer></script>
+    <link
+      href="https://css.gg/css?=|backspace|clipboard|edit-markup|inbox|trash"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body onload="loginAtStart()">
+    <div id="snackbar"></div>
+    <section class="sign-page">
+      <div class="loader"></div>
+      <form class="signup-form">
+        <label for="username">Username</label>
+        <input type="text" id="username" />
+        <label for="password">Password</label>
+        <input type="password" id="password" />
+        <label for="email">Email</label>
+        <input type="text" id="email" />
+        <label for="fullName">Full Name</label>
+        <input type="text" id="fullName" />
+        <button class="signup-btn btn" id="signup-btn">Sign Up</button>
+        <span
+          >Already have an account?
+          <button id="to-login" class="btn">Login</button></span
+        >
+      </form>
+      <form class="login-form">
+        <label for="username">Username</label>
+        <input type="text" id="username" />
+        <label for="password">Password</label>
+        <input type="password" id="password" />
+        <button class="login-btn btn" id="login-btn">Login</button>
+        <span
+          >Don't have an account?
+          <button id="to-signup" class="btn">Signup</button></span
+        >
+      </form>
+    </section>
+    <section class="loby-page">
+      <div class="edit-page-wrapper">
+        <form class="edit-page-container">
+          <label for="item">Item:</label>
+          <input type="text" id="item" />
+          <label for="price">Price:</label>
+          <input type="text" id="price" />
+          <label for="discount">Discount:</label>
+          <input type="text" id="discount" />
+          <div class="edit-btns">
+            <button id="edit-save" class="btn">
+              <i class="gg-clipboard"></i>
+            </button>
+            <button id="edit-add" class="btn"><i class="gg-inbox"></i></button>
+            <button id="edit-close" class="btn">
+              <i class="gg-backspace"></i>
+            </button>
+          </div>
+        </form>
+      </div>
+      <section class="loby-container">
+        <nav>
+          <ul>
+            <li class="btn">Home</li>
+            <li class="btn" id="add-item">Add Item</li>
+            <li class="btn" id="log-out">Logout</li>
+          </ul>
+        </nav>
+        <div class="title-container">
+          <p>ITEM</p>
+          <p>PRICE</p>
+          <p>DISCOUNT</p>
+          <div class="product-btns">
+            <button class="btn"><i class="gg-trash"></i></button>
+            <button class="btn"><i class="gg-edit-markup"></i></button>
+          </div>
+        </div>
+        <div class="loader-products"></div>
+        <article class="products-container"></article>
+      </section>
+    </section>
+  </body>
+</html>
