@@ -24,8 +24,8 @@ const showLoader = (i) => {
 };
 
 const signUp = async () => {
-  const username = document.querySelector(".signup-form > #username");
-  const password = document.querySelector(".signup-form > #password");
+  const username = document.querySelector("#signup-username");
+  const password = document.querySelector("#signup-password");
   const email = document.querySelector(".signup-form > #email");
   const fullname = document.querySelector(".signup-form > #fullName");
 
@@ -56,8 +56,8 @@ const signUp = async () => {
 };
 
 const login = async () => {
-  const username = document.querySelector(".login-form > #username");
-  const password = document.querySelector(".login-form > #password");
+  const username = document.querySelector("#login-username");
+  const password = document.querySelector("#login-password");
   const logAccount = {
     userName: username.value,
     password: password.value,
@@ -72,7 +72,6 @@ const login = async () => {
       body: JSON.stringify(logAccount),
     });
     const data = await response.json();
-    console.log(data);
     if (data.status == "success") {
       showSnackBar("Logged In Successfuly", 3000);
       signPage.style.display = "none";
@@ -104,7 +103,6 @@ const loginAtStart = async () => {
       getProducts();
     }
     if (!data.user) {
-      console.log("error has been found");
       loginForm.style.display = "block";
       signPage.style.display = "flex";
       lobyPage.style.display = "none";
@@ -156,8 +154,8 @@ const logOut = async () => {
     });
 
     showSnackBar("Logged Out successfuly", 3000);
-    signPage.style.display = "flex";
     lobyPage.style.display = "none";
+    signPage.style.display = "flex";
   } catch (error) {
     console.log(error);
     showSnackBar("Token expired long ago, or there was an error :D", 3000);
@@ -271,7 +269,6 @@ buttons.forEach((btn) => {
     btn.addEventListener("click", (e) => {
       e.preventDefault();
       login();
-      console.log("login-func active");
     });
   }
 

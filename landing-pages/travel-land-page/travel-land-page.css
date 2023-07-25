@@ -43,7 +43,7 @@ nav article .profile-img {
   height: 60px;
   margin-right: 10px;
   border-radius: 50%;
-  background-image: url(profile-pic.JPG);
+  background-image: url(/index-utils/profile-pic.JPG);
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -211,7 +211,7 @@ nav .burger-icon {
       rgba(19, 232, 241, 0.3019607843),
       rgba(19, 232, 241, 0.3019607843)
     ),
-    url(/pages/loby/utils/BG-Main-scaled.jpeg);
+    url(/index-utils/Vortex_background.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;

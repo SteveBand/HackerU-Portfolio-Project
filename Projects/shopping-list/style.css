@@ -185,12 +185,13 @@ section.sign-page > form > span > button:hover {
   }
 }
 
-.loby-page {
+section.loby-page {
   width: 100%;
-  min-height: 100vh;
-  display: flex !important;
+  height: 100vh;
+  /* display: flex !important; */
   justify-content: center;
   align-items: center;
+  /* display: none; */
 }
 
 .loby-container {
@@ -199,6 +200,7 @@ section.sign-page > form > span > button:hover {
   text-align: center;
   min-height: 50vh;
   max-height: 90vh;
+  /* display: none; */
 }
 
 .loby-container > nav {

@@ -24,3 +24,18 @@ window.onscroll = () => {
     }
   });
 };
+
+const pList = document.querySelectorAll(".p");
+
+const submitForm = (e) => {
+  e.preventDefault();
+  const obj = {};
+  const inputs = [...e.target].filter((i) => i.id);
+  inputs.forEach((el) => {
+    const { id, value } = el;
+    obj[id] = value;
+  });
+  console.log(obj);
+  window.localStorage.setItem("contact", JSON.stringify(obj));
+  location.href = "contact.html";
+};

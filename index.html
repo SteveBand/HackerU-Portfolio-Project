@@ -321,7 +321,7 @@
           לורם איפסום דולור סיט אמט, קונסקטורלית סחטיר בלובק. תצטנפל בלינדו
           למרקל אס לכימפו, דול, צוט ומעיוט - לפגו רוגצה.
         </p>
-        <form>
+        <form onsubmit="submitForm(event)">
           <label for="name">שם</label>
           <input id="name" name="name" type="text" />
 
@@ -331,8 +331,9 @@
           <label for="phone">טלפון</label>
           <input id="phone" name="phone" type="text" />
 
-          <label for="message">הודעה</label>
-          <textarea placeholder="הודעה"></textarea>
+          <label for="description">הודעה</label>
+          <textarea placeholder="הודעה" id="description"></textarea>
+          <button>Send</button>
         </form>
       </article>
     </section>
