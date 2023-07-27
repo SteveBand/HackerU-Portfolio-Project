@@ -3,8 +3,7 @@ const section = document.querySelector("section.game-on");
 const menu = document.querySelector("section.before-start");
 const leaderboardPage = document.querySelector("section.leader-board");
 const buttons = document.querySelectorAll("button");
-const cardFlipAudio = new Audio("utils/card-sounds-35956.mp3");
-const cardHiddenAudio = new Audio("utils/poof-of-smoke-87381.mp3");
+const cardHiddenAudio = new Audio("./utils/poof-of-smoke-87381.mp3");
 ///for number of attempts
 let attempts = 0;
 
@@ -85,7 +84,6 @@ buttons.forEach((el) => {
             return;
           }
           el.classList.add("showing");
-          cardFlipAudio.play();
           checkCards();
         });
       });

@@ -76,6 +76,7 @@ const login = async () => {
       showSnackBar("Logged In Successfuly", 3000);
       signPage.style.display = "none";
       lobyPage.style.display = "flex";
+      editWrapper.style.display = "flex";
       getProducts();
     }
     if (data.status == "error") {
@@ -98,6 +99,7 @@ const loginAtStart = async () => {
       signPage.style.display = "none";
       loginForm.style.display = "none";
       lobyPage.style.display = "flex";
+      editWrapper.style.display = "flex";
       showLoader(false);
       showSnackBar("Logged In Successfuly", 3000);
       getProducts();
@@ -156,6 +158,7 @@ const logOut = async () => {
     showSnackBar("Logged Out successfuly", 3000);
     lobyPage.style.display = "none";
     signPage.style.display = "flex";
+    editWrapper.style.display = "none";
   } catch (error) {
     console.log(error);
     showSnackBar("Token expired long ago, or there was an error :D", 3000);
